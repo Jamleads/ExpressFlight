@@ -1,0 +1,183 @@
+/* 
+#4db5ff;
+#00ff95; 
+#050b6e;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Balinese&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+body {
+    padding: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+.heading img {
+    animation-name: MoveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+@keyframes MoveInLeft {
+    0%{
+        transform: translateX(-100px);
+    }
+    70%{
+        transform: translateX(10px);
+    }
+}
+.heading span {
+    color: #050b6e;
+}
+.navbar-link-list li a {
+    color: #050b6e;
+    font-size: 15px;
+}
+.navbar-link-list li a:hover {
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+    color: white;
+    border-radius: 5px;
+}
+.btn {
+    width: 150px;
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+    color: #fff;
+    border: none;  
+
+    animation-name: NavBtnMove;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+@keyframes NavBtnMove {
+    0% {
+        transform: translateY(100px);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+}
+.showcase {
+    height: 80vh;
+    background-image: url(../img/tourists-having-fun-coast.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.showcase-col {
+    margin-top: 150px;
+    color: white;
+    
+    animation: ShowText 3s ease-out ;
+}
+@keyframes ShowText {
+    0% {
+        transform: translateY(100px);
+    }
+    50% {
+        transform: translateX(+50px);
+    }
+}
+.showcase-col h1 {
+    font-size: 55px;
+}
+.adventure-head, 
+.adventure h5 {
+    color: #050b6e;
+}
+.adventure span,
+#adventure h1 span,
+.features h3 span {
+    padding: 0px 20px ;
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+    color: white;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border: solid 5px white;
+}
+.adventure-text {
+    line-height: 50px;
+}
+.card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-foot span,
+.rev-card-foot span{
+    font-weight: 700;
+    font-size: 20px;
+}
+.features {
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+    clip-path: polygon(16% 0, 100% 0%, 100% 100%, 16% 100%, 0% 50%);
+
+    animation-name: FlyJet;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+@keyframes FlyJet {
+    0% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+}
+.features ul li {
+    line-height: 40px;
+    color: white;
+}
+.review-card {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    box-shadow: 0px 10px 10px;
+}
+.check {
+    height: 25vh;
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+}
+.review {
+    margin-top: -150px;
+}
+.review-title {
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to top left, #050b6e, #7dd56f);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border: solid 5px white;
+}
+.card-star i {
+    color: rgb(232, 155, 12);
+}
+.rev-card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-top: gray solid 2px;
+}
+.footer {
+    border-top: 2px solid gray;
+    margin-top: 100px;
+}
+.footer h4 {
+    color: #050b6e;
+    font-weight: 700;
+}
+.footer .social{
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+    color: #050b6e;
+}
+
+
+/* responsivness */
+@media screen and (max-width: 1200px) {
+    .showcase-col h1 {
+        font-size: 35px;
+    }
+}
